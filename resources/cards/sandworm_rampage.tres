@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://drnc72xalmii2"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_v7ahq"]
+
+[resource]
+script = ExtResource("1_v7ahq")
+title = "Sandworm Rampage"
+flavor = "The ever-present threat of a massive sandworm devouring entire spice-harvesting outposts or armies in the open desert."
+description = "Event Option A: A random desert space loses all ground troops stationed there (representing a worm attack). The controlling faction must retreat or lose forces.
+Event Option B: A Fremen player (or whoever has worm-riding capabilities) can instead summon Shai-Hulud to disrupt an enemy force in an adjacent region."
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"

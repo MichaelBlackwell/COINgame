@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://dd3m8f27d3yn0"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_msn5q"]
+
+[resource]
+script = ExtResource("1_msn5q")
+title = "The Emperor’s Levy"
+flavor = "The Emperor demands spice tribute; Houses jockey for favor, while Fremen and other subversive forces may see an opportunity in the tribute chaos."
+description = "Event Option A: The House that pays the largest spice levy to the Emperor gains temporary Imperial favor (maybe resources or the ability to use Sardaukar forces).
+Event Option B: If no one pays up, or if the tribute is insufficient, the Emperor punishes the planet with a crackdown—Troops loyal to the Emperor enforce martial law in targeted regions."
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"

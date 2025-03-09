@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://bwdvungwoium3"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_5qfxn"]
+
+[resource]
+script = ExtResource("1_5qfxn")
+title = "Smuggler’s Deal"
+flavor = "Contraband spice and black-market dealings flourish on Arrakis, offering immediate profits but carrying future risks."
+description = "Event Option A: A faction can gain quick resources (spice, credits, etc.), ignoring typical constraints. But that faction marks an area or operation as “compromised,” facing potential detection later.
+Event Option B: Another faction intercepts the smugglers—receiving the same resources while damaging the local infiltration network for the original beneficiary."
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"

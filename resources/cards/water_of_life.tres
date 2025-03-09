@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://b28htdfgfknad"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_5iym0"]
+
+[resource]
+script = ExtResource("1_5iym0")
+title = "The Water of Life"
+flavor = "Harvesting or controlling the Water of Life is a dangerous but potentially game-changing endeavor."
+description = "Event Option A: Bene Gesserit (or a spiritual faction) gains a temporary edge: improved infiltration or a special ability that elevates their standing.
+Event Option B: If a faction dares to capture it for research, they gain resources but risk negative consequences (e.g., lowered popular support or a revolt)."
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"

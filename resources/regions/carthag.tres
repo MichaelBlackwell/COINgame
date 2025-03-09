@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://dn6sohasowwqs"]
+
+[ext_resource type="Script" uid="uid://cru5jja3gx8le" path="res://scripts/RegionData.gd" id="1_754i0"]
+
+[resource]
+script = ExtResource("1_754i0")
+region_name = "Carthag"
+controlling_faction = 2
+support_level = 1
+spice_value = 0
+troops = 3
+bases = Array[int]([])
+population = 3
+economic_value = 0
+metadata/_custom_type_script = "uid://cru5jja3gx8le"

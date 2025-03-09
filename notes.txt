@@ -1,0 +1,11 @@
+4 factions:
+	Atreides 
+		control and support
+		water
+	Harkonnen 
+		control and support
+		water
+	Corrino 
+		spice
+	Fremen -
+		no Control or support

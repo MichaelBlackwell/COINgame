@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://qwbysmoun2r0"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_4dm5w"]
+
+[resource]
+script = ExtResource("1_4dm5w")
+title = "Bene Gesserit Manipulation"
+flavor = " The Sisterhood maneuvers behind the scenes, exploiting both superstition and noble House politics."
+description = "Event Option A: Shift one alliance marker or neutral space marker to your advantage. Perhaps improve or degrade another faction’s support or control.
+Event Option B: If the Sisterhood overreaches, local resentment flares—another faction can step in and gain supporters in a key location."
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"

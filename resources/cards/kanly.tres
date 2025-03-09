@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://dbpe2ep6uqgq5"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_xv2tt"]
+
+[resource]
+script = ExtResource("1_xv2tt")
+title = "Kanly (House Vendetta)"
+flavor = "Formalized House vendettas present a chance to strike or sabotage an enemy with less fear of political fallout."
+description = "Event Option A: One House targets another with sabotage—destroying a certain number of resources or blocking an action. The sabotage is “sanctioned” by the Emperor or the Landsraad, so there’s no immediate reprisal.
+Event Option B: If the targeted House has enough political sway, they can rally allies (or Sardaukar intervention) to protect themselves and turn the vendetta into a diplomatic victory."
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"

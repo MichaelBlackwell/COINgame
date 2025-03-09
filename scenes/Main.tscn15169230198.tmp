@@ -1,0 +1,120 @@
+[gd_scene load_steps=8 format=3 uid="uid://bjjinwwwun5gr"]
+
+[ext_resource type="Script" uid="uid://uoofvxxnwkys" path="res://scripts/Main.gd" id="1_rvslj"]
+[ext_resource type="Script" uid="uid://p7x0xna630mh" path="res://scripts/TurnManager.gd" id="2_0bbpv"]
+[ext_resource type="Script" uid="uid://dn5k3h4q8lmh7" path="res://scenes/interactive_map.gd" id="3_nxtc6"]
+[ext_resource type="Theme" uid="uid://6jhcqt1qjmln" path="res://scenes/UITheme.tres" id="3_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://dsc3fav3yx2sj" path="res://scenes/Card.tscn" id="4_rarhs"]
+[ext_resource type="LabelSettings" uid="uid://byyi8kssbvnn1" path="res://scenes/SequenceOfPlayFont.tres" id="4_vcsgt"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c01mt"]
+load_path = "res://.godot/imported/map_regions.png-833c1491476e77c84de9d4a292242686.ctex"
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_rvslj")
+
+[node name="TurnManager" type="Node" parent="."]
+script = ExtResource("2_0bbpv")
+
+[node name="InteractiveMap" type="Node2D" parent="."]
+position = Vector2(1883, 769)
+script = ExtResource("3_nxtc6")
+
+[node name="MapSprite" type="Sprite2D" parent="InteractiveMap"]
+texture = SubResource("CompressedTexture2D_c01mt")
+
+[node name="Regions" type="Node2D" parent="InteractiveMap"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("3_vcsgt")
+
+[node name="Lower" type="HBoxContainer" parent="UI"]
+layout_mode = 2
+offset_top = 1557.0
+offset_right = 3838.0
+offset_bottom = 2157.0
+
+[node name="NextCard" parent="UI/Lower" instance=ExtResource("4_rarhs")]
+layout_mode = 2
+
+[node name="CurrentCard" parent="UI/Lower" instance=ExtResource("4_rarhs")]
+layout_mode = 2
+
+[node name="SequenceOfPlay" type="Panel" parent="UI"]
+custom_minimum_size = Vector2(1200, 600)
+layout_mode = 0
+offset_left = 2529.0
+offset_top = 1462.0
+offset_right = 3729.0
+offset_bottom = 2062.0
+
+[node name="Sections" type="HBoxContainer" parent="UI/SequenceOfPlay"]
+layout_mode = 0
+offset_right = 1212.0
+offset_bottom = 608.0
+
+[node name="Label8" type="Label" parent="UI/SequenceOfPlay/Sections"]
+custom_minimum_size = Vector2(400, 600)
+layout_mode = 2
+text = "ELIGIBLE FACTIONS"
+label_settings = ExtResource("4_vcsgt")
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/SequenceOfPlay/Sections"]
+custom_minimum_size = Vector2(200, 600)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="UI/SequenceOfPlay/Sections/VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "1st FACTION OP ONLY. No Special Activity"
+autowrap_mode = 2
+
+[node name="Button2" type="Button" parent="UI/SequenceOfPlay/Sections/VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "1st FACTION OP. May Add Special Activity"
+autowrap_mode = 2
+
+[node name="Button3" type="Button" parent="UI/SequenceOfPlay/Sections/VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "1st FACTION EVENT"
+autowrap_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="UI/SequenceOfPlay/Sections"]
+custom_minimum_size = Vector2(200, 600)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="UI/SequenceOfPlay/Sections/VBoxContainer2"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "2nd FACTION LIM OP"
+autowrap_mode = 2
+
+[node name="Button5" type="Button" parent="UI/SequenceOfPlay/Sections/VBoxContainer2"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "2nd FACTION LIM OP or Event"
+autowrap_mode = 2
+
+[node name="Button6" type="Button" parent="UI/SequenceOfPlay/Sections/VBoxContainer2"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "2nd FACTION OP. May Add Special Activity"
+autowrap_mode = 2
+
+[node name="Label7" type="Label" parent="UI/SequenceOfPlay/Sections"]
+custom_minimum_size = Vector2(400, 600)
+layout_mode = 2
+text = "INELIGIBLE FACTIONS"
+label_settings = ExtResource("4_vcsgt")
+autowrap_mode = 2

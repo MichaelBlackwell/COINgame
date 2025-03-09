@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://btonmoixj1x85"]
+
+[ext_resource type="Script" uid="uid://cru5jja3gx8le" path="res://scripts/RegionData.gd" id="1_in0qm"]
+
+[resource]
+script = ExtResource("1_in0qm")
+region_name = "Highway 2"
+controlling_faction = 0
+support_level = 0
+spice_value = 0
+troops = 0
+bases = Array[int]([])
+population = 0
+economic_value = 4
+metadata/_custom_type_script = "uid://cru5jja3gx8le"

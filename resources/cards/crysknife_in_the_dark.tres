@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://d36lvjc4md2to"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_xntrj"]
+
+[resource]
+script = ExtResource("1_xntrj")
+title = "Crysknife in the Dark"
+flavor = "Elite Fremen warriors stage a stealth raid at night, employing desert camouflage and infiltration tactics."
+description = "Event Option A: Fremen can remove or displace an enemy unit in a desert region without triggering a standard battle (representing stealthy kill teams).
+Event Option B: If the infiltration is detected, the defending faction gains intelligence and can immediately counterattack or redeploy forces.
+"
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"

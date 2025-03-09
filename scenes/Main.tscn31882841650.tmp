@@ -1,0 +1,303 @@
+[gd_scene load_steps=10 format=3 uid="uid://bjjinwwwun5gr"]
+
+[ext_resource type="Script" uid="uid://uoofvxxnwkys" path="res://scripts/Main.gd" id="1_rvslj"]
+[ext_resource type="Script" uid="uid://p7x0xna630mh" path="res://scripts/TurnManager.gd" id="2_0bbpv"]
+[ext_resource type="Script" uid="uid://dn5k3h4q8lmh7" path="res://scripts/interactive_map.gd" id="3_nxtc6"]
+[ext_resource type="Theme" uid="uid://6jhcqt1qjmln" path="res://scenes/UITheme.tres" id="3_vcsgt"]
+[ext_resource type="Script" uid="uid://bbn57cw33sisj" path="res://scripts/Region.gd" id="4_nxtc6"]
+[ext_resource type="PackedScene" uid="uid://dsc3fav3yx2sj" path="res://scenes/Card.tscn" id="4_rarhs"]
+[ext_resource type="LabelSettings" uid="uid://byyi8kssbvnn1" path="res://scenes/SequenceOfPlayFont.tres" id="4_vcsgt"]
+[ext_resource type="Script" uid="uid://cvi54emme7jac" path="res://scripts/camera_2d.gd" id="5_jlsqs"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c01mt"]
+load_path = "res://.godot/imported/map_regions.png-833c1491476e77c84de9d4a292242686.ctex"
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_rvslj")
+
+[node name="TurnManager" type="Node" parent="."]
+script = ExtResource("2_0bbpv")
+
+[node name="ArrakisMap" type="Node2D" parent="."]
+position = Vector2(923, 401)
+script = ExtResource("3_nxtc6")
+
+[node name="MapSprite" type="Sprite2D" parent="ArrakisMap"]
+texture = SubResource("CompressedTexture2D_c01mt")
+
+[node name="Regions" type="Node2D" parent="ArrakisMap"]
+
+[node name="Area_Arrakeen" type="Area2D" parent="ArrakisMap/Regions"]
+z_index = 1
+position = Vector2(296, -232)
+script = ExtResource("4_nxtc6")
+region_name = null
+controlling_faction = null
+support_level = null
+spice_value = null
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ArrakisMap/Regions/Area_Arrakeen"]
+polygon = PackedVector2Array(-12, -129, -106, -82, -136, 1, -95, 101, 2, 138, 98, 93, 139, 3, 99, -94)
+
+[node name="Polygon2D" type="Polygon2D" parent="ArrakisMap/Regions/Area_Arrakeen"]
+color = Color(0.859964, 3.46541e-06, 5.77569e-07, 1)
+texture_offset = Vector2(5, 5)
+
+[node name="Area_Carthag" type="Area2D" parent="ArrakisMap/Regions"]
+position = Vector2(-414, 161)
+script = ExtResource("4_nxtc6")
+region_name = null
+controlling_faction = null
+support_level = null
+spice_value = null
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ArrakisMap/Regions/Area_Carthag"]
+position = Vector2(711, -394)
+polygon = PackedVector2Array(-713, 250, -816, 300, -851, 387, -813, 486, -720, 529, -626, 501, -566, 395, -608, 294)
+
+[node name="Polygon2D" type="Polygon2D" parent="ArrakisMap/Regions/Area_Carthag"]
+color = Color(0.859964, 3.46541e-06, 5.77569e-07, 1)
+texture_offset = Vector2(5, 5)
+
+[node name="Area_Tsimpo" type="Area2D" parent="ArrakisMap/Regions"]
+position = Vector2(-59, -272)
+script = ExtResource("4_nxtc6")
+region_name = null
+controlling_faction = null
+support_level = null
+spice_value = null
+
+[node name="Polygon2D" type="Polygon2D" parent="ArrakisMap/Regions/Area_Tsimpo"]
+color = Color(0.859964, 3.46541e-06, 5.77569e-07, 1)
+texture_offset = Vector2(5, 5)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ArrakisMap/Regions/Area_Tsimpo"]
+polygon = PackedVector2Array(-4, -76, 62, -42, 72, -1, 53, 54, 5, 73, -53, 47, -72, 1, -50, -53)
+
+[node name="Area_Arsunt" type="Area2D" parent="ArrakisMap/Regions"]
+position = Vector2(-84, 349)
+script = ExtResource("4_nxtc6")
+region_name = null
+controlling_faction = null
+support_level = null
+spice_value = null
+
+[node name="Polygon2D" type="Polygon2D" parent="ArrakisMap/Regions/Area_Arsunt"]
+color = Color(0.859964, 3.46541e-06, 5.77569e-07, 1)
+texture_offset = Vector2(5, 5)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ArrakisMap/Regions/Area_Arsunt"]
+polygon = PackedVector2Array(-4, -75, 60, -40, 74, 5, 42, 61, -4, 76, -53, 56, -79, 3, -54, -55)
+
+[node name="Area_Highway1" type="Area2D" parent="ArrakisMap/Regions"]
+position = Vector2(83, -257)
+rotation = 0.150529
+script = ExtResource("4_nxtc6")
+region_name = null
+controlling_faction = null
+support_level = null
+spice_value = null
+
+[node name="Polygon2D" type="Polygon2D" parent="ArrakisMap/Regions/Area_Highway1"]
+color = Color(0.859964, 3.46541e-06, 5.77569e-07, 1)
+texture_offset = Vector2(5, 5)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ArrakisMap/Regions/Area_Highway1"]
+position = Vector2(-1.37754, 4.25469)
+polygon = PackedVector2Array(-58.3381, -24.5289, -59.2884, 29.2214, 65.1701, 29.5613, 64.9816, -25.0278)
+
+[node name="Area_Highway2" type="Area2D" parent="ArrakisMap/Regions"]
+position = Vector2(-67, -45)
+script = ExtResource("4_nxtc6")
+region_name = null
+controlling_faction = null
+support_level = null
+spice_value = null
+
+[node name="Polygon2D" type="Polygon2D" parent="ArrakisMap/Regions/Area_Highway2"]
+color = Color(0.859964, 3.46541e-06, 5.77569e-07, 1)
+texture_offset = Vector2(5, 5)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ArrakisMap/Regions/Area_Highway2"]
+polygon = PackedVector2Array(213, -158, 235, -119, -206, 152, -223, 113)
+
+[node name="Area_Highway3" type="Area2D" parent="ArrakisMap/Regions"]
+position = Vector2(-219, 277)
+script = ExtResource("4_nxtc6")
+region_name = null
+controlling_faction = null
+support_level = null
+spice_value = null
+
+[node name="Polygon2D" type="Polygon2D" parent="ArrakisMap/Regions/Area_Highway3"]
+color = Color(0.859964, 3.46541e-06, 5.77569e-07, 1)
+texture_offset = Vector2(5, 5)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ArrakisMap/Regions/Area_Highway3"]
+polygon = PackedVector2Array(-54, -63, 71, 13, 48, 59, -79, -19)
+
+[node name="Area_Hagga_Basin" type="Area2D" parent="ArrakisMap/Regions"]
+position = Vector2(-247, -126)
+script = ExtResource("4_nxtc6")
+region_name = null
+controlling_faction = null
+support_level = null
+spice_value = null
+
+[node name="Polygon2D" type="Polygon2D" parent="ArrakisMap/Regions/Area_Hagga_Basin"]
+color = Color(0.859964, 3.46541e-06, 5.77569e-07, 1)
+texture_offset = Vector2(5, 5)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ArrakisMap/Regions/Area_Hagga_Basin"]
+polygon = PackedVector2Array(-138, -172, 89, -129, 167, -51, 307, -89, 338, -54, -37, 169, -140, 119)
+
+[node name="Area_Imperial_Basin" type="Area2D" parent="ArrakisMap/Regions"]
+position = Vector2(93, 129)
+script = ExtResource("4_nxtc6")
+region_name = null
+controlling_faction = null
+support_level = null
+spice_value = null
+
+[node name="Polygon2D" type="Polygon2D" parent="ArrakisMap/Regions/Area_Imperial_Basin"]
+color = Color(0.859964, 3.46541e-06, 5.77569e-07, 1)
+texture_offset = Vector2(5, 5)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ArrakisMap/Regions/Area_Imperial_Basin"]
+polygon = PackedVector2Array(54, -252, 197, -194, 251, 218, -137, 144, -346, 31)
+
+[node name="Label" type="Label" parent="ArrakisMap/Regions/Area_Imperial_Basin"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -55.5
+offset_top = -23.0
+offset_right = 55.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "Imperial Basin"
+
+[node name="Label2" type="Label" parent="ArrakisMap/Regions/Area_Imperial_Basin"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+
+[node name="MapUI" type="Control" parent="ArrakisMap"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+anchor_mode = 0
+script = ExtResource("5_jlsqs")
+
+[node name="Canvas" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="Canvas"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 3840.0
+offset_bottom = 2160.0
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+theme = ExtResource("3_vcsgt")
+
+[node name="SequenceOfPlay" type="Panel" parent="Canvas/UI"]
+custom_minimum_size = Vector2(1200, 600)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1200.0
+offset_top = -600.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Sections" type="HBoxContainer" parent="Canvas/UI/SequenceOfPlay"]
+layout_mode = 0
+offset_right = 1212.0
+offset_bottom = 608.0
+
+[node name="Label8" type="Label" parent="Canvas/UI/SequenceOfPlay/Sections"]
+custom_minimum_size = Vector2(400, 600)
+layout_mode = 2
+text = "ELIGIBLE FACTIONS"
+label_settings = ExtResource("4_vcsgt")
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Canvas/UI/SequenceOfPlay/Sections"]
+custom_minimum_size = Vector2(200, 600)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Canvas/UI/SequenceOfPlay/Sections/VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "1st FACTION OP ONLY. No Special Activity"
+autowrap_mode = 2
+
+[node name="Button2" type="Button" parent="Canvas/UI/SequenceOfPlay/Sections/VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "1st FACTION OP. May Add Special Activity"
+autowrap_mode = 2
+
+[node name="Button3" type="Button" parent="Canvas/UI/SequenceOfPlay/Sections/VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "1st FACTION EVENT"
+autowrap_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Canvas/UI/SequenceOfPlay/Sections"]
+custom_minimum_size = Vector2(200, 600)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="Canvas/UI/SequenceOfPlay/Sections/VBoxContainer2"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "2nd FACTION LIM OP"
+autowrap_mode = 2
+
+[node name="Button5" type="Button" parent="Canvas/UI/SequenceOfPlay/Sections/VBoxContainer2"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "2nd FACTION LIM OP or Event"
+autowrap_mode = 2
+
+[node name="Button6" type="Button" parent="Canvas/UI/SequenceOfPlay/Sections/VBoxContainer2"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "2nd FACTION OP. May Add Special Activity"
+autowrap_mode = 2
+
+[node name="Label7" type="Label" parent="Canvas/UI/SequenceOfPlay/Sections"]
+custom_minimum_size = Vector2(400, 600)
+layout_mode = 2
+text = "INELIGIBLE FACTIONS"
+label_settings = ExtResource("4_vcsgt")
+autowrap_mode = 2
+
+[node name="Lower" type="HBoxContainer" parent="Canvas/UI"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -600.0
+offset_right = 2404.0
+grow_vertical = 0
+
+[node name="NextCard" parent="Canvas/UI/Lower" instance=ExtResource("4_rarhs")]
+layout_mode = 2
+
+[node name="CurrentCard" parent="Canvas/UI/Lower" instance=ExtResource("4_rarhs")]
+layout_mode = 2

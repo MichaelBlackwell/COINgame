@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://g20mdjupes16"]
+
+[ext_resource type="Script" uid="uid://cru5jja3gx8le" path="res://scripts/RegionData.gd" id="1_c5csg"]
+
+[resource]
+script = ExtResource("1_c5csg")
+region_name = "Tsimpo"
+controlling_faction = 1
+support_level = 0
+spice_value = 0
+troops = 1
+bases = Array[int]([])
+population = 2
+economic_value = 0
+metadata/_custom_type_script = "uid://cru5jja3gx8le"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://jb0igna8ckf2"]
+
+[ext_resource type="Script" uid="uid://cru5jja3gx8le" path="res://scripts/RegionData.gd" id="1_n1bxv"]
+
+[resource]
+script = ExtResource("1_n1bxv")
+region_name = "Imperial Basin"
+controlling_faction = 0
+support_level = 0
+spice_value = 3
+troops = 0
+bases = Array[int]([])
+population = 2
+economic_value = 0
+metadata/_custom_type_script = "uid://cru5jja3gx8le"

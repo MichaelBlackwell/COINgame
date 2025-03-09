@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://bwdldycrpfrlu"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_pm6jf"]
+
+[resource]
+script = ExtResource("1_pm6jf")
+title = "Guild Embargo"
+flavor = "The Spacing Guild restricts interplanetary travel or shipping, drastically altering the flow of resources and reinforcements."
+description = "Event Option A: All factions face a temporary slowdown—no new units can arrive on Arrakis for the next round. Resources from off-planet are severely limited.
+Event Option B: One faction that has bribed the Guild can bypass the embargo, giving them a huge advantage in mobility and reinforcement."
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cm7pd4wrjle6t"]
+
+[ext_resource type="Script" uid="uid://b15l0vqgwi0dk" path="res://scripts/FactionPiece.gd" id="1_56ru7"]
+[ext_resource type="Texture2D" uid="uid://74c1626f8uew" path="res://small_cube.png" id="2_g5j27"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1iba3"]
+
+[node name="FactionPiece" type="Node2D"]
+script = ExtResource("1_56ru7")
+faction = "Atreides"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_g5j27")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_1iba3")

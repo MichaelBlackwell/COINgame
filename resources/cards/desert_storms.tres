@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://c4cnb27tmhpkw"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_iir6m"]
+
+[resource]
+script = ExtResource("1_iir6m")
+title = "Desert Storms"
+flavor = "The brutal sandstorms of Arrakis can wipe out entire operations and caravans."
+description = "Event Option A: Temporarily block ground movement in certain desert areas. Troops in those areas suffer losses or reduced capabilities.
+Event Option B: Fremen players (or any faction with desert adaptation) can reposition forces using “storm cover,” ignoring typical movement restrictions."
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"

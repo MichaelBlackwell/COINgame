@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://c45blkxamvic"]
+
+[ext_resource type="Script" uid="uid://uvhdmai6ruuc" path="res://scripts/Card.gd" id="1_b5umy"]
+
+[resource]
+script = ExtResource("1_b5umy")
+title = "Ornithopter Recon"
+flavor = "The high-tech reconnaissance used by Houses to spot Fremen sietches or enemy troop movements."
+description = "Event Option A: A faction with access to Ornithopters can “scout” one or more desert areas. This reveals hidden units or reduces enemy ambush ability.
+Event Option B: If the reconnaissance fails (due to sabotage or storms), the scouting faction must retreat and skip upcoming actions in the scouted region."
+faction_priority = Array[String]([])
+card_id = 0
+metadata/_custom_type_script = "uid://uvhdmai6ruuc"
